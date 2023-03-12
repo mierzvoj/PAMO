@@ -10,7 +10,9 @@ import android.widget.TextView; // for displaying text
 
 import com.example.bmi.R;
 
-
+//Wojciech Mierzejewski s21617
+//BMI calculator Android App
+//Uses JAVA + xml layout view
 public class MainActivity extends AppCompatActivity {
 
     //all nesessary variables deifinition

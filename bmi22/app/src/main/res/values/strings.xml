@@ -1,13 +1,11 @@
 <resources>
     <string name="app_name">bmi2</string>
-
     <string name="enter_weight">Enter Weight</string>
     <string name="enter_height">Enter Height</string>
     <string name="bmi">BMI</string>
     <string name="enter_age">Enter your age </string>
     <string name="Energy_Burn">Energy Burn</string>
     <string name="paragraph">
-
         Scrambled eggs\n
         Lightly whisk 2 large eggs, 6 tbsp single cream or full cream milk and a pinch of salt together until the mixture has just one consistency.\n
     STEP 2\n
@@ -32,10 +30,17 @@
     STEP 5\n
     Season to taste and finish with a dollop of plain yogurt and a sprinkling of the reserved toasted spices.\n
 
-
-
-
-
-
     </string>
+    <string name="correct_text">Correct!</string>
+    <string name="incorrect_text">InCorrect!</string>
+    <string name="first_score_text">Correct!</string>
+    <string name="correct_toast_message">Correct!</string>
+    <string name="incorrect_toast_message">InCorrect!</string>
+    <string name="q1"> Is pouring sugar to tea a healthy habit?</string>
+    <string name="q2">Being active 150 mins/week is healthy or not?</string>
+    <string name="q3">Drink 2 litres a water per day</string>
+    <string name="q4">Be psotitive towards your life</string>
+    <string name="q5">Be balanced at whay you eat</string>
+    <string name="q6">There is no one single universal diet</string>
+
 </resources>

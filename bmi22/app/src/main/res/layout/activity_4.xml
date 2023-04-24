@@ -34,22 +34,22 @@
         android:text="See stats here"
         android:textSize="18sp" />
 
+
     <Button
         android:id="@+id/btnTrue"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@color/result_background"
         android:text="TRUE BUTTON"
-        android:textColor="#ffffff" />
-
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/btnFalse"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@android:color/holo_red_light"
+        android:background="@color/teal_200"
         android:text="FALSE BUTTON"
         android:textColor="#ffffff" />
 

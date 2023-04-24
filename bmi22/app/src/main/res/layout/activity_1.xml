@@ -51,18 +51,18 @@
         android:layout_columnSpan="2"/>
 
     <TextView
+        android:id="@+id/heightTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/heightTextView"
         android:layout_row="1"
         android:layout_column="0"
         android:layout_columnSpan="2"
-        android:hint="@string/enter_height"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/amount_background"
+        android:background="@color/colorAccent"
+        android:elevation="@dimen/elevation"
+        android:hint="@string/enter_height"
         android:padding="@dimen/textview_padding"
-        android:elevation="@dimen/elevation"/>
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <!--BMI display view-->
     <TextView

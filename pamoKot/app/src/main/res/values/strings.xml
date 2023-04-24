@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pamoKot</string>
+    <string name="body_mass_index">BMI</string>
+    <string name="height">height (m)</string>
+    <string name="weight">weight</string>
+    <string name="result">result BMI</string>
+    <string name="BH">BH</string>
+    <string name="age">age</string>
+    <string name="gender">gender</string>
+    <string name="heightIncm">cm</string>
+    <string name="resultHb">result HB</string>
+</resources>

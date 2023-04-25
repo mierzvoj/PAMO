@@ -20,17 +20,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Chart(
-    data: Map<Float, String>,
-    max_value: Int
+fun CustomChart(
+    barValue: List<Float>,
+    xAxisScale: List<String>,
+    total_amount: Int
 ) {
-
     val context = LocalContext.current
     // BarGraph Dimensions
     val barGraphHeight by remember { mutableStateOf(200.dp) }
     val barGraphWidth by remember { mutableStateOf(20.dp) }
     // Scale Dimensions
-    val scaleYAxisWidth by remember { mutableStateOf(50.dp) }
+    val scaleYAxisWidth by remember { mutableStateOf(5.dp) }
     val scaleLineWidth by remember { mutableStateOf(2.dp) }
 
     Column(
@@ -58,7 +58,7 @@ fun Chart(
                     modifier = Modifier.fillMaxHeight(),
                     verticalArrangement = Arrangement.Bottom
                 ) {
-                    Text(text = max_value.toString())
+                    Text(text = total_amount.toString())
                     Spacer(modifier = Modifier.fillMaxHeight())
                 }
 
@@ -66,7 +66,7 @@ fun Chart(
                     modifier = Modifier.fillMaxHeight(),
                     verticalArrangement = Arrangement.Bottom
                 ) {
-                    Text(text = (max_value / 2).toString())
+                    Text(text = (total_amount / 2).toString())
                     Spacer(modifier = Modifier.fillMaxHeight(0.5f))
                 }
 
@@ -81,17 +81,17 @@ fun Chart(
             )
 
             // graph
-            data.forEach {
+            barValue.forEach {
                 Box(
                     modifier = Modifier
                         .padding(start = barGraphWidth, bottom = 5.dp)
                         .clip(CircleShape)
                         .width(barGraphWidth)
-                        .fillMaxHeight(it.key)
+                        .fillMaxHeight(it)
                         .background(Color.Red)
                         .clickable {
                             Toast
-                                .makeText(context, it.key.toString(), Toast.LENGTH_SHORT)
+                                .makeText(context, it.toString(), Toast.LENGTH_SHORT)
                                 .show()
                         }
                 )
@@ -110,12 +110,12 @@ fun Chart(
         // Scale X-Axis
         Row(
             modifier = Modifier
-                .padding(start = scaleYAxisWidth+barGraphWidth+scaleLineWidth)
+                .padding(start = scaleYAxisWidth + barGraphWidth + scaleLineWidth)
                 .fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(barGraphWidth)
         ) {
 
-            data.values.forEach {
+            xAxisScale.forEach {
                 Text(
                     modifier = Modifier.width(barGraphWidth),
                     text = it,
@@ -132,15 +132,11 @@ fun Chart(
 @Composable
 @Preview
 fun seeIt4(){
-    Chart(
-        data = mapOf(
-
-            Pair(25.5f,"20.05"),
-            Pair(31.6f,"30.06"),
-            Pair(28.2f,"30.08"),
-            Pair(31.7f,"30.09"),
-            Pair(23.8f,"31.12"),
-            ), max_value = 50)
+    CustomChart(
+        barValue = listOf(0.5f,0.6f,0.2f,0.7f,0.8f),
+        xAxisScale = listOf("20.05", "30.06", "31.08", "30.09", "31.12"),
+        total_amount = 1000
+    )
 }
 
 

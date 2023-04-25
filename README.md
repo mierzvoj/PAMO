@@ -1,1 +1,1 @@
-![pamo34](https://user-images.githubusercontent.com/55141520/230912823-e4e4fbcc-8274-45e2-93d1-ee57d06080da.png)
+![pamoKot](https://user-images.githubusercontent.com/55141520/234379623-865333dd-f6bf-4bd2-b802-c0e3fd5f92ef.png)

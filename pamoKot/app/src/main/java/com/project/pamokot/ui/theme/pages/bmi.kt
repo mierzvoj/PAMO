@@ -1,6 +1,7 @@
 package com.project.pamokot.ui.theme.pages
 
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -14,6 +15,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
@@ -67,5 +69,6 @@ fun Bmi() {
                 .padding(16.dp),
         )
     }
+    Toast.makeText(LocalContext.current, "" + bmi, Toast.LENGTH_LONG).show()
     Log.i("val", "$bmi")
 }

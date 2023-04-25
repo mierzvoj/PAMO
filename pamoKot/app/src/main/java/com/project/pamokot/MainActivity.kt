@@ -15,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import com.project.pamokot.ui.theme.pages.Bmi
 import com.project.pamokot.ui.theme.pages.Hb
+import com.project.pamokot.ui.theme.pages.seeIt3
 
 class MainActivity : ComponentActivity() {
     @SuppressLint("UnrememberedMutableState")
@@ -31,6 +32,9 @@ class MainActivity : ComponentActivity() {
                 }
                 Row() {
                     showHb()
+                }
+                Row() {
+                    seeIt3()
                 }
                 }
 
